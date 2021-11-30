@@ -25,7 +25,10 @@ export class UsuarioListComponent implements OnInit {
   }
 
   usuarioDetails(id: number) {
-    this.router.navigate(['usuario-details', id]);
+    var result = confirm("Quer realmente mostrar?");
+    if (result) {
+      this.router.navigate(['usuario-details', id]);
+    }
   }
 
   updateUsuario(id: number) {
@@ -33,9 +36,12 @@ export class UsuarioListComponent implements OnInit {
   }
 
   deleteUsuario(id: number) {
-    this.usuarioService.deleteUsuario(id).subscribe(data => {
-      console.log(data);
-      this.getUsuarios();
-    })
+    var result = confirm("Quer realmente deletar?");
+    if (result) {
+      this.usuarioService.deleteUsuario(id).subscribe(data => {
+        console.log(data);
+        this.getUsuarios();
+      })
+    }
   }
 }

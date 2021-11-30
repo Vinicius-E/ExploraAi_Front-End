@@ -140,11 +140,6 @@ h2 {
 	height: 135px;
 }
 
-#buttonCadastrar {
-	font-size: 23px;
-	font-weight: 700;
-}
-
 #tv {
 	color: black;
 	font-size: 20px;
@@ -152,6 +147,8 @@ h2 {
 }
 
 #buttonCadastrar {
+	font-size: 23px;
+	font-weight: 700;
 	margin-left: 20px;
 	color: black;
 	border-radius: 10px;

@@ -36,25 +36,25 @@ export class CreateUsuarioComponent implements OnInit {
       this.saveUsuario();
     }
     else if (this.usuario.email != null && this.usuario.nome != null && this.usuario.senha == null) {
-      alert("Senha: " + this.usuario.senha + " | ==>> Campo(s) Inválido(s)!");
+      alert("Senha ==>> Campo(s) Inválido(s)!");
     }
     else if (this.usuario.nome == null && this.usuario.email != null && this.usuario.senha != null) {
-      alert("Nome: " + this.usuario.nome + " | ==>> Campo(s) Inválido(s)!");
+      alert("Nome ==>> Campo(s) Inválido(s)!");
     }
     else if (this.usuario.nome == null && this.usuario.senha == null && this.usuario.email != null) {
-      alert("Nome: " + this.usuario.nome + " | Senha: " + this.usuario.senha + " | ==>> Campo(s) Inválido(s)!");
+      alert("Nome | Senha ==>> Campo(s) Inválido(s)!");
     }
     else if (this.usuario.nome != null && this.usuario.senha != null && this.usuario.email == null) {
-      alert("Email: " + this.usuario.email + " | ==>> Campo(s) Inválido(s)!");
+      alert("Email ==>> Campo(s) Inválido(s)!");
     }
     else if (this.usuario.email == null && this.usuario.nome != null && this.usuario.senha == null) {
-      alert("Email: " + this.usuario.email + " | Senha: " + this.usuario.senha + " | ==>> Campo(s) Inválido(s)!");
+      alert("Email | Senha ==>> Campo(s) Inválido(s)!");
     }
     else if (this.usuario.senha != null && this.usuario.email == null && this.usuario.nome == null) {
-      alert("Email: " + this.usuario.email + "| Nome: " + this.usuario.nome + " | ==>> Campo(s) Inválido(s)!");
+      alert("Email | Nome  ==>> Campo(s) Inválido(s)!");
     }
     else if (this.usuario.email == null && this.usuario.nome == null && this.usuario.senha == null) {
-      alert("Nome: " + this.usuario.nome + " | Email: " + this.usuario.email + " | Senha: " + this.usuario.senha + " | ==>> Campo(s) Inválido(s)!");
+      alert("Nome | Email | Senha ==>> Campo(s) Inválido(s)!");
     }
   }
 }
